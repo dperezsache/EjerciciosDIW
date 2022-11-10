@@ -1,0 +1,50 @@
+/* David Pérez Saché */
+
+img
+{
+	position: absolute;
+	width: 180px;
+	height: 180px;
+}
+
+img#img1
+{
+	left: 0px;
+	top: 0px;
+	z-index: 0;
+}
+
+img#img2
+{
+	left: 120px;
+	top: 60px;
+	z-index: 1;
+}
+
+img#img3
+{
+	left: 240px;
+	top: 120px;
+	z-index: 5;
+}
+
+img#img4
+{
+	left: 360px;
+	top: 180px;
+	z-index: 4;
+}
+
+img#img5
+{
+	left: 480px;
+	top: 240px;
+	z-index: 3;
+}
+
+img#img6
+{
+	left: 600px;
+	top: 300px;
+	z-index: 2;
+}

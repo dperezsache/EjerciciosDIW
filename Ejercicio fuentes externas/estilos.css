@@ -1,0 +1,332 @@
+/* David Pérez Saché */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');	/* Importación de fuente externa */
+
+@font-face	/* Importación de fuente local */
+{
+	font-family: "Poppins";
+	src: url("Poppins-Bold.ttf");
+}
+
+body
+{
+	width: 1280px;
+	margin: auto;
+	font-family: Arial;
+	line-height: 25px;
+}
+
+a
+{
+	color: #007541;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: purple;
+	text-decoration: underline;
+	font-family:  Open Sans, sans-serif;	/* Cambiar la fuente por la fuente importada por URL */	
+}
+
+h1, h2, h3
+{
+	font-family: Poppins, sans-serif; 	/* Cambiar la fuente por la fuente importada localmente */
+	text-align: center;
+}
+
+h1
+{
+	color: black;
+}
+
+h2
+{
+	color: brown;
+}
+
+h3
+{
+	color: maroon;
+	padding: 10px 0px;
+}
+
+h4
+{
+	padding: 2.5px;
+	margin: 0;
+}
+
+div
+{
+	border: 1px solid lightgray;
+}
+
+.imagenes
+{
+	width: 380px;
+	height: 300px;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+}
+
+#contenedorImagenes
+{
+	text-align: center;
+	border: 0;
+}
+
+#cabecera
+{
+	background-image: url("imagenes/fondo_cabecera.png");
+	font-family: Trebuchet MS;
+	text-align: center;
+}
+
+.indice
+{
+	background-color: white;
+	display: inline-block;
+	font-size: 14px;
+	margin: 30px 10px 5px 0px;
+	border-radius: 5px;
+	border: 0;
+	padding: 5px;
+}
+
+.indice:hover
+{
+	background-color: #e0ffe9;
+	border-radius: 10px;
+}
+
+.indiceEnlaces
+{
+	color: black;
+	text-decoration: none;
+}
+
+.indiceEnlaces:hover
+{
+	color: navy;
+}
+
+#autorArticulo
+{
+	padding-left: 20px;
+	margin: 5px 0px;
+	height: 100px;
+	font-size: 15px;
+}
+
+#nombreAutor
+{
+	font-weight: bold;
+	color: #7434eb;
+}
+
+#flotarIzquierda
+{
+	float: left;
+}
+
+#votos
+{
+	color: #00b55b;
+	text-decoration: underline;
+}
+
+.apartado
+{
+	background: #f0f0f0;
+	padding: 0 50px;
+	text-align: justify;
+	margin: 5px 0px;
+}
+
+.tituloLista
+{
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+li
+{
+	margin-bottom: 7.5px;
+	padding-right: 50px;
+}
+
+#img1
+{
+	width: 256px;
+	height: 180px;
+	padding-left: 20px;
+}
+
+.textoResaltado
+{
+	font-weight: bold;
+	font-style: italic;
+}
+
+#listaEstilo
+{
+	list-style-type: square;
+}
+
+#listaEstilo2
+{
+	list-style-type: circle;
+}
+
+#listaEstilo3
+{
+	list-style-type: lower-roman;
+}
+
+.flotarDerecha
+{
+	float: right;
+}
+
+.img2
+{
+	float: right;
+	padding: 10px 0px 10px 20px;
+}
+
+.img3
+{
+	float: left;
+	padding: 10px 10px 10px 0px;
+}
+
+table
+{
+	margin: auto;
+	border-collapse: collapse;
+	width: 1000px;
+	margin-bottom: 10px;
+}
+
+td, th
+{
+	border: 1px solid black;
+	padding: 5px;
+}
+
+td
+{
+	text-align: justify;
+	background-color: white;
+	padding: 0px 10px;
+}
+
+th
+{
+	text-align: center;
+	background-color: lightblue;
+}
+
+#formulario1
+{
+	padding: 50px 5px;
+	border: 0;
+}
+
+#formulario2
+{
+	padding: 20px 5px;
+	border: 0;
+}
+
+input, textarea
+{
+	border: 2px solid green;
+	padding: 5px;
+	border-radius: 5px;
+	font-family: Garamond;
+	font-size: 16px;
+}
+
+label
+{
+	padding-right: 10px;
+}
+
+.formularioBorde
+{
+	border-top: 2px inset gray;
+	padding-top: 10px;
+}
+
+.formulariosDiv
+{
+	border: 0;
+	margin: 5px;
+}
+
+.formulariosDiv2
+{
+	border: 0;
+	display: inline-block;
+}
+
+.botonEnviar
+{
+	background-color: green;
+	color: white;
+	font-weight: bold;
+	font-family: Arial;
+}
+
+.botonEnviar:hover
+{
+	background-color: darkgreen;
+}
+
+.formularioContacto
+{
+	margin-right: 35px;
+}
+
+#fechaNacimiento
+{
+	margin-right: 45px;
+}
+
+.obligatorio
+{
+	color: red;
+	font-weight: bold;
+}
+
+#piePagina
+{
+	background-color: #DCEAD4;
+	text-align: center;
+}
+
+.pieDiv
+{
+	padding: 0px 20px;
+	display: inline-block;
+	margin-right: 20px;
+	border: 0;
+}
+
+.imgPie1
+{
+	padding-right: 15px;
+}
+
+#imgPie2
+{
+	padding-left: 15px;
+}
+
+.pieParrafo
+{
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- David Pérez Saché -->
+<!-- 
+	1º Quitamos float:left de la primera caja. --- La caja se mueve al lado de la última caja flotada
+	2º Flotamos las cajas del DIV que son elementos en línea. --- Se comporta como si fuese en bloque 
+-->
+
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="David Pérez Saché">
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+		<title>Blancanieves versión 8</title>
+	</head>
+	<body>
+		<div id="bloque">
+			<div class="div1" id="cama1">Sabio</div>
+			<div class="div1" id="cama2">Gruñón</div>
+			<div class="div1" id="cama3">Feliz</div>
+			<div class="div1" id="cama4">Dormilón</div>
+		</div>
+		<div id="linea">
+			<span class="div2" id="cama5">Tímido</span>
+			<span class="div2" id="cama6">Mocoso</span>
+			<span class="div2" id="cama7">Mudito</span>
+		</div>
+	</body>
+</html>

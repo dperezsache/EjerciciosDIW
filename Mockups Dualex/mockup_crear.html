@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+		<meta name="author" content="Equipo Fuego"/>
+		<title>Crear actividad</title>
+		<link rel="stylesheet" type="text/css" href="mockups_estilos.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+	</head>
+    <body>
+        <div id="main">
+            <div id="cajaCorreo">
+                <span class="material-icons">account_circle</span>
+                correousuario@ejemplo.com
+            </div>
+            <div id="mainBotones">
+                <div id="cajaBotones">
+                    <button>
+                        <span class="material-icons">arrow_back</span>
+                        Volver
+                    </button>
+                    <button>
+                        <span class="material-icons">logout</span>
+                        Cerrar sesión
+                    </button>
+                    <button id="botonAyuda">
+                        <span class="material-icons">help_center</span>
+                        Ayuda
+                    </button>
+                </div>
+            </div>
+            <div id="divAlta">
+                <form method="post">
+                    <fieldset>
+                        <legend>Creación de actividad</legend>
+                        <label for="nombre">Nombre actividad</label>
+                        <input type="text" name="nombre" maxlength="50"/>
+                        <div id="cajaModulos">
+                            <div>
+                                <input type="checkbox" name="DIW"/>
+                                <label for="DIW">Desarrollo de Interfaces Web</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="DEAP"/>
+                                <label for="DEAP">Despliegue de Aplicaciones Web</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="DWEC"/>
+                                <label for="DWEC">Desarrollo Web en Entorno Cliente</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="DWES"/>
+                                <label for="DWES">Desarrollo Web en Entorno Servidor</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="EIE"/>
+                                <label for="EIE">Empresa e Iniciativa Emprendedora</label>
+                            </div>
+                        </div>
+                        <button id="botonCancelar">Cancelar</button>
+                        <button id="botonAceptar">Aceptar</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

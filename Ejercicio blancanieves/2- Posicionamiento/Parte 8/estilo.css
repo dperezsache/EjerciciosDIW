@@ -1,0 +1,77 @@
+/* David Pérez Saché */
+body
+{
+	width: 1280px;
+	height: 800px;
+	margin: 0 auto;
+	border: 10px inset #3a0ca3;
+}
+
+.div1
+{
+	padding: 2px 10px 0px 10px;
+	background-color: lightgray;
+	display: inline-block;
+	width: 100px;
+	height: 300px;
+	border: 2px solid black;
+	text-align: center;
+}
+
+#bloque
+{
+	border: 1px dotted red;
+	height: 0;
+	overflow: hidden;
+}
+
+#linea
+{
+	border: 1px dotted orange;
+}
+
+.div2
+{
+	padding: 2px 10px 0px 10px;
+	background-color: lightgray;
+	width: 100px;
+	height: 300px;
+	border: 2px solid black;
+	text-align: center;
+}
+
+#cama1
+{
+	background-color: #d9ed92;
+
+}
+
+#cama2
+{
+	background-color: #b5e48c;
+}
+
+#cama3
+{
+	background-color: #99d98c;
+}
+
+#cama4
+{
+	background-color: #76c893;
+}
+
+#cama5
+{
+	background-color: #ffd166;
+}
+
+#cama6
+{
+	background-color: #06d6a0;
+}
+
+#cama7
+{
+	background-color: #118ab2;
+}

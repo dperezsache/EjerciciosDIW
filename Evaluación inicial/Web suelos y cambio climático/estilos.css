@@ -1,0 +1,451 @@
+/* David Pérez Saché */
+
+/*
+	Lo que pretendo hacer en el body es:
+	1º que el ancho de la página sea el indicado en las instrucciones.
+	2º centrar la página al centro de la pantalla.
+	3º cambiar la fuente a Arial, y cambiar el espacio vertical entre las líneas de texto de toda la página.
+*/
+body
+{
+	width: 1280px;
+	margin: auto;
+	font-family: Arial;
+	line-height: 25px;
+}
+
+/*
+	Hacer que se cambie el color de los enlaces, y que se quite la decoración (línea de debajo).
+*/
+a
+{
+	color: #007541;
+	text-decoration: none;
+}
+
+/*
+	Hacer que al pasar el ratón sobre enlaces se les cambie el color, y añadir la decoración (línea de debajo).
+*/
+a:hover
+{
+	color: purple;
+	text-decoration: underline;
+}
+
+/*
+	Estilo común para cambiar la fuente, y centrar el texto que haya en los h1-h3
+*/
+h1, h2, h3
+{
+	font-family: Verdana;
+	text-align: center;
+}
+
+h1
+{
+	color: black;
+	font-family: Courier New;
+}
+
+h2
+{
+	color: brown;
+}
+
+h3
+{
+	color: maroon;
+	padding: 10px 0px;
+}
+
+h4
+{
+	padding: 2.5px;
+	margin: 0;
+}
+
+div
+{
+	border: 1px solid lightgray;
+}
+
+.imagenes
+{
+	width: 380px;
+	height: 300px;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+}
+
+#contenedorImagenes
+{
+	text-align: center;
+	border: 0;
+}
+
+/*
+	Hacer que la cabecera tenga una imagen de fondo, centrar el texto, y cambiar la fuente del texto, lo que afectará a los índices.
+*/
+#cabecera
+{
+	background-image: url("imagenes/fondo_cabecera.png");
+	font-family: Trebuchet MS;
+	text-align: center;
+}
+
+/*
+	Clase para darle estilo a los índices de la cabecera, dónde cambio el color de fondo a blanco, pongo inline block para que salgan todos pegados
+	y modifico para que el div esté ligeramente redondeado, y que el border sea invisible.
+*/
+.indice
+{
+	background-color: white;
+	display: inline-block;
+	font-size: 14px;
+	margin: 30px 10px 5px 0px;
+	border-radius: 5px;
+	border: 0;
+	padding: 5px;
+}
+
+/*
+	Efecto que hace que al pasar el cursor por un índice cambie el color y el redondeado de los bordes, de los divs de tipo indice.
+*/
+.indice:hover
+{
+	background-color: #e0ffe9;
+	border-radius: 10px;
+}
+
+/*
+	Para hacer que los enlaces de los índices parezcan texto normal.
+*/
+.indiceEnlaces
+{
+	color: black;
+	text-decoration: none;
+}
+
+/*
+	Efecto para que cuando se pase el ratón por los enlaces de los ídnices cambie el color.
+*/
+.indiceEnlaces:hover
+{
+	color: navy;
+}
+
+#autorArticulo
+{
+	padding-left: 20px;
+	margin: 5px 0px;
+	height: 100px;
+	font-size: 15px;
+}
+
+/*
+	Cambiar el texto del autor del artículo a negrita y de otro color
+*/
+#nombreAutor
+{
+	font-weight: bold;
+	color: #7434eb;
+}
+
+#flotarIzquierda
+{
+	float: left;
+}
+
+/*
+	Cambiar el color y añadir subrayado al texto de la nota del artículo.
+*/
+#votos
+{
+	color: #00b55b;
+	text-decoration: underline;
+}
+
+.apartado
+{
+	background: #f0f0f0;
+	padding: 0 50px;
+	text-align: justify;
+	margin: 5px 0px;
+}
+
+/*
+	Clase usada para resaltar el texto al inicio de cada punto de varias viñetas.
+*/
+.tituloLista
+{
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/*
+	Hacer que los items de las listas estén separados 50 px a la derecha, y con un margén por abajo
+*/
+li
+{
+	margin-bottom: 7.5px;
+	padding-right: 50px;
+}
+
+/*
+	Cambiar las dimensiones de la imagen, y relleno a la izquierda para separarla del texto un poco.
+*/
+#img1
+{
+	width: 256px;
+	height: 180px;
+	padding-left: 20px;
+}
+
+/*
+	Clase usada para resaltar partes del texto de la página.
+*/
+.textoResaltado
+{
+	font-weight: bold;
+	font-style: italic;
+}
+
+/*
+	Cambiar el estilo de las viñetas de los tipos de degradación a cuadraditos.
+*/
+#listaEstilo
+{
+	list-style-type: square;
+}
+
+/*
+	Cambiar el estilo de las viñetas a círculos sin relleno.
+*/
+#listaEstilo2
+{
+	list-style-type: circle;
+}
+
+/*
+	Cambiar el estilo de las viñetas ordenadas del final a números romanos.
+*/
+#listaEstilo3
+{
+	list-style-type: lower-roman;
+}
+
+.flotarDerecha
+{
+	float: right;
+}
+
+/*
+	Hacer que la imagen salga en el lado derecho, y con un relleno para separarla del texto
+*/
+.img2
+{
+	float: right;
+	padding: 10px 0px 10px 20px;
+}
+
+/*
+	Hacer que la imagen salga en el lado izquierdo, y con un relleno para separarla del texto
+*/
+.img3
+{
+	float: left;
+	padding: 10px 10px 10px 0px;
+}
+
+/*
+	Hacer que la tabla esté centrada, hacer que las celdas estén separadas con border-collapse, darle un ancho de 1000 píxeles
+	y un margen de 10 píxeles
+*/
+table
+{
+	margin: auto;
+	border-collapse: collapse;
+	width: 1000px;
+	margin-bottom: 10px;
+}
+
+/*
+	Estilo común de td y th
+*/
+td, th
+{
+	border: 1px solid black;
+	padding: 5px;
+}
+
+/*
+	Para que el texto de las celdas de la tabla aparezca justificado, que el fondo de las celdas sea blanco
+	y el el relleno horizontal sea de 10 píxeles, y que no haya vertical.
+*/
+td
+{
+	text-align: justify;
+	background-color: white;
+	padding: 0px 10px;
+}
+
+/*
+	Centrar el texto de las celdas cabeceras de la tabla, y cambiar el fondo de las celdas a azul claro para
+	distinguirlas de las otras celdas normales.
+*/
+th
+{
+	text-align: center;
+	background-color: lightblue;
+}
+
+/*
+	Para que el div dónde va el primer formulario haga que el formulario aparezca más apartado de
+	los bordes por el padding, y quitar los bordes.
+*/
+#formulario1
+{
+	padding: 50px 5px;
+	border: 0;
+}
+
+/*
+	Para que el div del segundo formulario aparezca más apartado de los bordes, y quitar los bordes.
+*/
+#formulario2
+{
+	padding: 20px 5px;
+	border: 0;
+}
+
+/*
+	Estilo común para los campos del formulario y los campos de texto, con border verde redondeado y fuente modificada de 16 píxeles.
+*/
+input, textarea
+{
+	border: 2px solid green;
+	padding: 5px;
+	border-radius: 5px;
+	font-family: Garamond;
+	font-size: 16px;
+}
+
+/*
+	Separar los label del borde derecho 10 píxeles.
+*/
+label
+{
+	padding-right: 10px;
+}
+
+/*
+	Clase aplicada a los formularios directamente, para hacer que entre el título del formulario y el formulario en sí
+	haya como una línea de separación gris.
+*/
+.formularioBorde
+{
+	border-top: 2px inset gray;
+	padding-top: 10px;
+}
+
+/*
+	Añadir un pequeño margen de separación, y desactivar los bordes.
+*/
+.formulariosDiv
+{
+	border: 0;
+	margin: 5px;
+}
+
+/*
+	Quitar los bordes, y también inline-block, para hacer que el input y el label no aparezcan en una línea aparte.
+*/
+.formulariosDiv2
+{
+	border: 0;
+	display: inline-block;
+}
+
+/*
+	Estilo para los botones submit de los formularios, de color verde, el texto de dentro de blanco, y la fuente Arial y negrita.
+*/
+.botonEnviar
+{
+	background-color: green;
+	color: white;
+	font-weight: bold;
+	font-family: Arial;
+}
+
+/*
+	Al pasar el ratón por los botones de submit cambiar el color
+*/
+.botonEnviar:hover
+{
+	background-color: darkgreen;
+}
+
+/*
+	Clase para alejar algunos de los campos del formulario de contacto unos de otros a la derecha.
+*/
+.formularioContacto
+{
+	margin-right: 35px;
+}
+
+/*
+	Para separar el campo de fecha de nacimiento del campo de elegir sexo.
+*/
+#fechaNacimiento
+{
+	margin-right: 45px;
+}
+
+/*
+	Resaltar los campos obligatorios del formulario
+*/
+.obligatorio
+{
+	color: red;
+	font-weight: bold;
+}
+
+/*
+	Cambiar el fondo a verde clarito, y aplicar text-align para centrar los divs que tendrá en su interior.
+*/
+#piePagina
+{
+	background-color: #DCEAD4;
+	text-align: center;
+}
+
+.pieDiv
+{
+	padding: 0px 20px;
+	display: inline-block;
+	margin-right: 20px;
+	border: 0;
+}
+
+/*
+	Añadir relleno a la derecha para apartar del texto algunas imagenes del pie de página.
+*/
+.imgPie1
+{
+	padding-right: 15px;
+}
+
+/*
+	Añadir relleno a la izquierda para apartar del texto una imagen que hay en el pie de página.
+*/
+#imgPie2
+{
+	padding-left: 15px;
+}
+
+.pieParrafo
+{
+	text-align: center;
+	font-weight: bold;
+	font-size: 13px;
+}

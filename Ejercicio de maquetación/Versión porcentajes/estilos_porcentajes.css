@@ -1,0 +1,81 @@
+/* David Pérez Saché */
+body
+{
+	width: 1260px;
+	height: 500px;
+	margin-top: 45px;
+}
+
+div#main
+{
+	background-color: red;
+	overflow: hidden;
+}
+
+div#izquierda
+{
+	margin-right: 1.587301587301587%;	/* 20px / 1260px (ancho base) * 100 = 1.5%  */
+	width: 61.9047619047619%;	/* 780px / 1260px (ancho base) * 100 = 61.90% */
+	height: 370px;	/* 400px altura - 30px de padding top */
+	float: left;
+	padding: 2.380952380952381% 0.7936507936507937% 0; /* 30px / 1260px * 100 = 2.38 | 10px / 1260 * 100 = 0.79% */
+	background-color: lightblue;
+}
+
+div#derecha
+{
+	margin-left: 1.587301587301587%;	/* 20px / 1260px * 100 = 1,5% */
+	width: 29.36507936507937%;	/* 370px / 1260px * 100 = 29.36% */
+	height: 350px;	/* 400px altura - 50px de padding-top */
+	float: left;
+	padding-top: 3.968253968253968%;	/* 50px / 1260px * 100 = 3.96% */
+	padding-left: 2.380952380952381%;	/* 30px / 1260px * 100 = 2.38% */
+	background-color: lightgreen;
+}
+
+footer
+{
+	height: 100px;
+	background-color: pink;
+	clear: left;	/* Se pone esto para que el footer no se flote y rebase */
+}
+
+div#derecha div#imagen
+{
+	width: 40.544%;	
+	height: auto;
+}
+
+div#derecha img
+{
+	width: 100%;
+	height: auto;
+}
+
+div#izquierda form
+{
+	margin-top: 8.205128205128205%;	/* 4em (64px) / 780px (ancho padre) * 100 = 8.20% */
+	padding: 2.051282051282051% 0 2.051282051282051% 8.975358974358974%;	/* 1em (16px) / 780px * 100 = 2.05% | 70px / 780px * 100 = 8.97% */
+	border: 1px solid black;
+}
+
+div#izquierda input[type="text"]
+{
+	width: 69.2090395480226%;	/* 490px / 708px (ancho padre) * 100 = 69.20% */
+	padding-left: 1.413429378531073%;	/* 10 / 708px * 100 = 1.41% */
+	height: 1.8em;
+	margin: 1.88319209039548% 0;	/* 1em (13.333px) / 708px * 100 = 1.88% */
+	display: block;
+}
+
+div#izquierda form div#centrar
+{
+	text-align: center;	/* Lo centra respecto al width */
+}
+
+div#izquierda form input[type="submit"]
+{
+	width: 21.1864406779661%;	/* 150px / 708px * 100 = 21.18% */
+	height: 2em;
+	background-color: #D8D8D8;
+}

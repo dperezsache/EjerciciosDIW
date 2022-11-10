@@ -1,0 +1,82 @@
+/* David Pérez Saché */
+body
+{
+	width: 1260px;
+	height: 500px;
+	margin-top: 45px;
+}
+
+#main
+{
+	background-color: red;
+	overflow: hidden;
+}
+
+#izquierda
+{
+	margin-right: 20px;
+	width: 780px;
+	height: 370px;	/* 400px altura - 30px de padding top */
+	float: left;
+	padding: 30px 10px 0;
+	background-color: lightblue;
+}
+
+#derecha
+{
+	margin-left: 20px;
+	width: 370px;
+	height: 350px;	/* 400px altura - 50px de padding-top */
+	float: left;
+	padding-top: 50px;
+	padding-left: 30px;
+	background-color: lightgreen;
+}
+
+footer
+{
+	height: 100px;
+	background-color: pink;
+	clear: left;	/* Se pone esto para que el footer no se flote y rebase */
+}
+
+#derecha #imagen
+{
+	width: 150px;
+	height: auto;
+}
+
+#derecha img
+{
+	width: 100%;
+	height: auto;
+}
+
+#izquierda form
+{
+	margin-top: 4em;
+	padding: 1em 0 1em 70px;
+	border: 1px solid black;
+}
+
+#izquierda input[type="text"]
+{
+	width: 490px;	/* 500px de ancho - 10px de padding left */
+	padding-left: 10px;
+	height: 1.8em;
+	margin: 1em 0;
+	display: block;
+}
+
+#izquierda form #centrar
+{
+	text-align: center;	/* Lo centra respecto al width */
+}
+
+
+#izquierda input[type="submit"]
+{
+	width: 150px;
+	height: 2em;
+	background-color: #D8D8D8;
+}

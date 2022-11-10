@@ -1,0 +1,188 @@
+/*
+    Equipo Fuego: David Pérez, Antonio Carlos Moruno, Domingo Miño
+*/
+body {
+    font-family: Arial;
+    font-size: 13px;
+}
+
+div#main {
+    width: 1280px;
+    margin: auto;
+    border: 1px solid lightgray;
+    height: auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.material-icons {
+    color: navy
+}
+
+div#cajaCorreo {
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+div#cajaCorreo span.material-icons {
+    vertical-align: middle;
+}
+
+div button {
+    padding: 10px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
+div button span {
+    vertical-align: middle;
+}
+
+div button:active {
+    background-color: lightgray;
+}
+
+button#botonAyuda {
+    margin-right: 0;
+}
+
+div#mainBotones {
+    background-color: aqua;
+}
+
+div#cajaBotonesListas {
+    margin-top: 20px;
+    float: left;
+}
+
+div#cajaBotones {
+    margin-top: 20px;
+    float: right;
+}
+
+div#cajaListado {
+    margin-top: 90px;
+    overflow: hidden;
+    height: 300px;
+    border: 1px solid black;
+    background-color: ghostwhite;
+}
+
+div#cajaListado div.cajaActividad {
+    padding: 10px;
+    background-color: aliceblue;
+    border-bottom: 2px solid darkslateblue;
+}
+
+div#cajaListado div.cajaActividad div#cajaCiclo1 {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 5px;
+    font-style: italic;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+div#cajaListado div.cajaActividad div#cajaCiclo2 {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 5px;
+    font-style: italic;
+    background-color: darksalmon;
+    border-radius: 10px;
+}
+
+div#cajaListado div.cajaActividad span.textoModulo {
+    font-weight: bold;
+}
+
+div#cajaListado div.cajaActividad span.material-icons {
+    vertical-align: middle;
+    float: right;
+    cursor: pointer;
+}
+
+div#divAlta {
+    margin: auto;
+    margin-top: 100px;
+    width: 750px;
+}
+
+div#divAlta form {
+    background-color: ghostwhite;
+}
+
+div#divAlta form input[type="text"] {
+    display: block;
+}
+
+div#divAlta form div#cajaModulos {
+    margin-top: 10px;
+}
+
+div#divAlta form div#cajaModulos div {
+    margin-top: 5px;
+}
+
+div#divAlta form fieldset {
+    padding: 20px;
+}
+
+div#divAlta form button {
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+
+div#divAlta form button#botonCancelar {
+    background-color: red;
+    color: white;
+}
+
+div#divAlta form button#botonAceptar {
+    background-color: greenyellow;
+}
+
+/* Ventana de alerta (background) */
+.ventana {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+  
+/* Contenido ventana */
+.ventana-contenido {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px;
+    text-align: center;
+}
+  
+  /* Aspa de cerrar */
+.cerrar {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.cerrar:hover, .cerrar:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

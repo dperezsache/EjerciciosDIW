@@ -38,6 +38,7 @@ footer
 	height: 100px;
 	background-color: pink;
 	clear: left;	/* Se pone esto para que el footer no se flote y rebase */
+	border: 1px solid black;
 }
 
 #derecha #imagen

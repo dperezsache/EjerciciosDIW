@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8"/>
+		<meta author="David Pérez Saché"/>
+		<title>Pruebas con cajas flexibles</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="estilos.css"/>
+	</head>
+    <body>
+		<header>
+			<nav>
+				<ul>
+					<li><h1>Pruebas con flexbox</h1></li>
+					<li><a href="#prueba1">Prueba 1</a></li>
+					<li><a href="#prueba2">Prueba 2</a></li>
+					<li><a href="#prueba3">Prueba 3</a></li>
+					<li><a href="#prueba4">Prueba 4</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- PRUEBA 1 -->
+		<div class="divPrueba">
+			<a name="prueba1"></a>
+			<h2>Prueba flex grow y flex shrink</h2>
+			<p>
+				El próposito de esta prueba es mostrar el funcionamiento de flex-grow y flex-shrink, mediante la inserción y borrado de contenedores.
+				<ul>
+					<li>flex-grow: las cajas grises tienen 3 de grow, las blancas 1, sirve para indicar la cantidad de espacio disponible que ocuparán los contenedores.</li>
+					<li>flex-shrink: las cajas grises tienen 3 de shrink, las blancas 1, sirve para indicar la cantidad de espacio que se le quitarán a los contenedores en caso que sea necesario.</li>
+				</ul>
+			</p>
+			<div id="divFlex1">
+				<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+				<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+				<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+			</div>
+			<div class="divBotones">
+				<button type="button">Añadir div</button>
+				<button type="button">Borrar div</button>
+			</div>
+		</div>
+		<hr noshade/>
+		
+		<!-- PRUEBA 2 -->
+		<div class="divPrueba">
+			<a name="prueba2"></a>
+			<h2>Prueba flex direction (row)</h2>
+			<p>
+				El próposito de esta prueba es mostrar los diferentes tipos de dirección que pueden tomar los contenedores con flex.
+				<ol>
+					<li>row: los contenedores se alinean a la izquierda.</li>
+					<li>row-reverse: los contenedores se alinean a la derecha, y los contenedores se quedan en orden inverso.</li>
+					<li>column: los contenedores se alinean de arriba a abajo.</li>
+					<li>column-reverse: los contenedores se alinean de arriba a abajo, y los contenedores se quedan en orden inverso</li>
+				</ol>
+			</p>
+			<div id="divFlex2">
+				<div>1</div>
+				<div>2</div>
+				<div>3</div>
+				<div>4</div>
+				<div>5</div>
+			</div>
+			<div class="divBotones">
+				<button type="button">Cambiar flex-direction</button>
+			</div>
+		</div>
+		<hr noshade/>
+		
+		<!-- PRUEBA 3 -->
+		<div class="divPrueba">
+			<a name="prueba3"></a>
+			<h2>align-items (stretch)</h2>
+			<p>
+				El próposito de esta prueba es probar como los contenedores se pueden alinear sobre el eje de cruz (verticalmente) con align-items.
+				<ol>
+					<li>stretch: Los contenedores se estiran para ocupar todo el espacio vertical.</li>
+					<li>flex-start: Los contenedores se pegan al top del contenedor padre.</li>
+					<li>flex-end: Los contenedores se pegan al bottom del contenedor padre.</li>
+					<li>center: Los contenedores se ponen al centro del contenedor padre.</li>
+					<li>baseline: Los contenedores se alinean sobre la línea de la fuente de texto.</li>
+				</ol>
+			</p>
+			<div id="divFlex3">
+				<div>Uno</div>
+				<div>Dos Dos</div>
+				<div>Tres Tres Tres</div>
+			</div>
+			<div class="divBotones">
+				<button type="button">Cambiar align-items</button>
+			</div>
+		</div>
+		<hr noshade/>
+
+		<!-- PRUEBA 4 -->
+		<div class="divPrueba">
+			<a name="prueba4"></a>
+			<h2>gap</h2>
+			<p>
+				El próposito de esta prueba es probar el funcion del atributo gap, el cúal sirve para añadir espacio entre contenedores flex.
+				<ol>
+					<li>gap: Propiedad shorthand para cambiar tanto 'row-gap' como 'column-gap'.</li>
+					<li>row-gap: Espaciado vertical entre contenedores.</li>
+					<li>column-gap: Espaciado horizontal entre contenedores.</li>
+				</ol>
+			</p>
+			<div id="divFlex4">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div class="divBotones">
+				<button type="button">Aumentar gap</button>
+				<button type="button">Reducir gap</button>
+			</div>
+		</div>
+		<footer>
+			
+		</footer>
+    </body>
+	<script src="script.js"></script>
+</html>

@@ -18,9 +18,9 @@ nav {
 }
 
 nav div.navElemento {
-    width: 280px;
+    width: 290px;
+    height: 25px;
     padding: 5px;
-    margin: 10px 0;
     color: white;
     font-weight: bold;
 }
@@ -28,12 +28,13 @@ nav div.navElemento {
 nav div.navElemento:hover {
     cursor: pointer;
     color: lightyellow;
+    background-color: #505050;
 }
 
 nav div.navElementoTitulo {
-    width: 280px;
+    width: 290px;
+    height: 25px;
     padding: 5px;
-    margin: 10px 0;
     color: rgb(255, 255, 196);
     text-decoration: underline;
     font-weight: bold;
@@ -52,10 +53,6 @@ div#divTitulo {
 
 div#divContenido {
     margin-left: 300px;
-}
-
-div#seleccion {
-    color: yellow;
 }
 
 form#formAlta {
@@ -170,6 +167,7 @@ footer div#divFooter img {
     }
 
     nav div.navElemento {
+        width: 175px;
         font-size: 0.75em;
     }
 

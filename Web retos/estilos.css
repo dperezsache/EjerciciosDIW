@@ -62,6 +62,7 @@ form#formAlta {
     background-color:aliceblue;
     border-radius: 10px;
     text-align: center;
+    overflow: hidden;
 }
 
 label {
@@ -85,7 +86,7 @@ select {
 }
 
 form div {
-    display: inline-block;
+    float:left;
 }
 
 div#divSelect {

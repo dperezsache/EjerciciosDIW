@@ -1,0 +1,282 @@
+body {
+    width: 1280px;
+    font-family: Arial;
+    margin: 0;
+}
+
+header, footer {
+    background-color: lightgray;
+    width: 1280px;
+}
+
+nav {
+    width: 298px;
+    min-height: 591px;
+    border: 1px solid black;
+    background-color: #303030;
+    position: absolute;
+}
+
+nav div.navElemento {
+    width: 280px;
+    padding: 5px;
+    margin: 10px 0;
+    color: white;
+    font-weight: bold;
+}
+
+nav div.navElemento:hover {
+    cursor: pointer;
+    color: lightyellow;
+}
+
+nav div.navElementoTitulo {
+    width: 280px;
+    padding: 5px;
+    margin: 10px 0;
+    color: rgb(255, 255, 196);
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+}
+
+div#divTitulo {
+    width: 978px;
+    display: block;
+    border: 1px solid black;
+    margin-left: 300px;
+    text-align: center;
+    background-color: #1b1b1b;
+    color: ghostwhite;
+}
+
+div#divContenido {
+    margin-left: 300px;
+}
+
+div#seleccion {
+    color: yellow;
+}
+
+form#formAlta {
+    width: 798px;
+    border: 1px solid lightblue;
+    margin: 20px 90px;
+    background-color:aliceblue;
+    border-radius: 10px;
+    text-align: center;
+}
+
+label {
+    width: 150px;
+    text-align: left;
+    display: block;
+}
+
+input {
+    width: 288px;
+    height: 25px;
+    border: 1px solid lightgray;
+    padding: 0 5px;
+}
+
+select {
+    width: 300px;   /* Al ser border-box indico el ancho total que va a tener el botón */
+    padding: 5px;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+
+form div {
+    display: inline-block;
+}
+
+div#divSelect {
+    margin: 0 244px;
+    margin-bottom: 20px;
+}
+
+div#divTextarea {
+    margin: 0 149px;
+}
+
+div.divCampoIzq {
+    margin: 20px 140px 20px 29px;
+}
+
+div.divCampoDer {
+    margin: 20px 29px 20px 0;
+}
+
+div#divBotonIzq {
+    margin: 20px 0;
+    margin-left: 149px;
+    margin-right: 200px;
+}
+
+div#divBotonIzq button {
+    background-color: crimson;
+    color: white;
+    width: 150px;   /* Al ser border-box indico el ancho total que va a tener el botón, en vez de calcularlo */
+    border: 1px solid black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+div#divBotonDer {
+    margin: 20px 0;
+    margin-right: 149px;
+}
+
+div#divBotonDer button {
+    background-color: darkturquoise;
+    color: white;
+    width: 138px;
+    border: 1px solid black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+textarea {
+    width: 488px;
+    padding: 5px;
+    border: 1px solid lightgray;
+    resize: none;
+}
+
+footer div#divFooter {
+    width: 250px;
+    margin: 0 515px;
+    font-size: 0;
+}
+
+footer {
+    position: absolute;
+}
+
+footer div#divFooter img {
+    padding: 5px;
+}
+
+/* ----- Media Query Tablet ----- */
+@media (max-width:768px) {
+    body, header, footer {
+        width: 768px;
+    }
+    
+    nav {
+        width: 183px;
+        height: 591px;
+    }
+
+    nav div.navElemento {
+        font-size: 0.75em;
+    }
+
+    nav div.navElementoTitulo {
+        text-align: left;
+    }
+
+    div#divTitulo {
+        width: 580px;
+        margin-left: 185px;
+    }
+    
+    div#divContenido {
+        margin-left: 185px;
+    }
+
+    form#formAlta {
+        width: 538px;
+        border: 1px solid lightblue;
+        margin: 20px 22.5px;
+        background-color:aliceblue;
+        text-align: center;
+    }
+    
+    label {
+        width: 150px;
+        text-align: left;
+        display: block;
+    }
+    
+    input {
+        width: 188px;
+        height: 25px;
+        border: 1px solid lightgray;
+        padding: 0 5px;
+    }
+    
+    select {
+        width: 198px;
+        padding: 5px;
+        border: 1px solid lightgray;
+        background-color: white;
+    }
+    
+    form div {
+        display: inline-block;
+    }
+    
+    div#divSelect {
+        margin: 0 169px;
+        margin-bottom: 20px;
+    }
+    
+    div#divTextarea {
+        margin: 0 99px;
+    }
+    
+    div.divCampoIzq {
+        margin: 20px 98px 20px 20px;
+    }
+    
+    div.divCampoDer {
+        margin: 20px 20px 20px 0;
+    }
+    
+    div#divBotonIzq {
+        margin: 20px 0;
+        margin-left: 99px;
+        margin-right: 100px;
+    }
+    
+    div#divBotonIzq button {
+        background-color: crimson;
+        color: white;
+        width: 120px;
+        border: 1px solid black;
+        padding: 5px;
+        font-weight: bold;
+    }
+    
+    div#divBotonDer {
+        margin: 20px 0;
+        margin-right: 99px;
+    }
+    
+    div#divBotonDer button {
+        background-color: darkturquoise;
+        width: 120px;
+        border: 1px solid black;
+        padding: 5px;
+        font-weight: bold;
+    }
+    
+    textarea {
+        width: 328px;
+        padding: 5px;
+        border: 1px solid lightgray;
+        resize: none;
+    }
+    
+    footer div#divFooter {
+        width: 250px;
+        margin: 0 259px;
+        font-size: 0;
+    }
+    
+    footer div#divFooter img {
+        padding: 5px;
+    }
+}

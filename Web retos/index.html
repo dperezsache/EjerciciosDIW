@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+		<meta author="David Pérez Saché"/>
+		<title>Web de retos</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="estilos.css"/>
+    </head>
+    <body>
+        <header>
+            <img src="imgs/logo.png" alt="Logo"/>
+        </header>
+        <main>
+            <nav>
+                <div class="navElementoTitulo">Gestión de retos</div>
+                <div class="navElemento">Listado de retos</div>
+                <div class="navElemento" id="seleccion">Alta de retos</div>
+                <div class="navElemento">Modificación de retos</div>
+                <div class="navElementoTitulo">Gestión de categorías</div>
+                <div class="navElemento">Listado de categorías</div>
+                <div class="navElemento">Alta de categorías</div>
+                <div class="navElemento">Modificación de categorías</div>
+            </nav>
+            <div id="divTitulo">
+                <h1>Alta de retos</h1>
+            </div>
+            <div id="divContenido">
+                <form method="POST" id="formAlta">
+                    <div class="divCampoIzq">
+                        <label for="nombre">Nombre reto</label>
+                        <input type="text" name="nombre"/>
+                    </div><div class="divCampoDer">
+                        <label for="dirigido">Dirigido a</label>
+                        <input type="text" name="dirigido"/>
+                    </div><div class="divCampoIzq">
+                        <label for="inicioInscripcion">Inicio inscripción</label>
+                        <input type="date" name="inicioInscripcion"/>
+                    </div><div class="divCampoDer">
+                        <label for="finInscripcion">Fin inscripción</label>
+                        <input type="date" name="finInscripcion"/>
+                    </div><div class="divCampoIzq">
+                        <label for="inicioReto">Inicio reto</label>
+                        <input type="date" name="inicioReto"/>
+                    </div><div class="divCampoDer">
+                        <label for="finReto">Fin reto</label>
+                        <input type="date" name="finReto"/>
+                    </div><div id="divSelect">
+                        <label for="categoria">Categoría</label>
+                        <select name="categoria"><option selected disabled>-- Selecciona --</option></select>
+                    </div><div id="divTextarea">
+                        <label for="descripcion">Descripción</label>
+                        <textarea name="descripcion"></textarea>
+                    </div><div id="divBotonIzq">
+                        <button type="reset">Cancelar</button>
+                    </div><div id="divBotonDer">
+                        <button type="submit">Crear reto</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div id="divFooter">
+                <a href="https://www.youtube.com" target="_blank">
+                    <img src="imgs/youtube.png" alt="YouTube"/>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="imgs/instagram.png" alt="Instagram"/>
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="imgs/facebook.png" alt="Facebook"/>
+                </a>
+                <a href="https://web.telegram.org" target="_blank">
+                    <img src="imgs/telegram.png" alt="Telegram"/>
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="imgs/twitter.png" alt="Twitter"/>
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -10,7 +10,7 @@ header, footer {
 }
 
 header img {
-    width: 400px;
+    width: 31.25%;
 }
 
 main {
@@ -18,7 +18,7 @@ main {
 }
 
 nav {
-    width: 298px;
+    width: 23.28125%;   /* 298px / 1280px (ancho base) * 100 = 23,28125% */
     min-height: 956.5px;
     border: 1px solid black;
     background-color: #303030;
@@ -26,9 +26,9 @@ nav {
 }
 
 nav div.navElemento {
-    width: 290px;
+    width: 97.31543624161074%;   /* 290px / 298px (ancho padre) * 100 = 97.31543624161074% */
     min-height: 25px;
-    padding: 5px;
+    padding: 1.677852348993289%;   /* 5px / 298px (ancho padre) * 100 = 1,677852348993289% */
     color: white;
     font-weight: bold;
 }
@@ -40,9 +40,9 @@ nav div.navElemento:hover {
 }
 
 nav div.navElementoTitulo {
-    width: 290px;
+    width: 97.31543624161074%;   /* 290px / 298px (ancho padre) * 100 = 97.31543624161074% */
     min-height: 25px;
-    padding: 5px;
+    padding: 1.677852348993289%;   /* 5px / 298px (ancho padre) * 100 = 1,677852348993289% */
     color: rgb(255, 255, 196);
     text-decoration: underline;
     font-weight: bold;
@@ -50,23 +50,23 @@ nav div.navElementoTitulo {
 }
 
 div#divTitulo {
-    width: 978px;
+    width: 76.40625%;   /* 978px / 1280 (ancho base) * 100 = 76,40625% */
     display: block;
     border: 1px solid black;
-    margin-left: 300px;
+    margin-left: 23.4375%; /* 300px / 1280px (ancho base) * 100 = 23,4375% */
     text-align: center;
     background-color: #1b1b1b;
     color: ghostwhite;
 }
 
 div#divContenido {
-    margin-left: 300px;
+    margin-left: 23.4375%; /* 300px / 1280px (ancho base) * 100 = 23,4375% */
 }
 
 form#formAlta {
-    width: 798px;
+    width: 81.42857142857143%;   /* 798px / 980px * 100 = 81,42857142857143% */
     border: 1px solid lightblue;
-    margin: 20px 90px;
+    margin: 20px 9.183673469387755%;    /* 90px / 980px * 100 = 9,183673469387755% */
     background-color:aliceblue;
     border-radius: 10px;
     text-align: center;
@@ -74,21 +74,21 @@ form#formAlta {
 }
 
 label {
-    width: 150px;
+    width: 50%; /* 150px / 300px * 100 = 50% */
     text-align: left;
     display: block;
 }
 
 input {
-    width: 288px;
-    min-height: 25px;
+    width: 96%; /* 288x / 300px * 100 = 96% */
+    height: 25px;
     border: 1px solid lightgray;
-    padding: 0 5px;
+    padding: 0 1.666666666666667%;  /* 5px / 300px * 100 = 1.666666666666667% */
 }
 
-select {
-    width: 300px;   /* Al ser border-box indico el ancho total que va a tener el botón */
-    padding: 5px;
+select {    /* Es de tipo border-box, así que indico el ancho total en el width */
+    width: 100%;    /* 300px / 300px = 100% */
+    padding: 1.666666666666667%;   /* 5px / 300px * 100 = 1.666666666666667% */
     border: 1px solid lightgray;
     background-color: white;
 }
@@ -98,61 +98,67 @@ form div {
 }
 
 div#divSelect {
-    margin: 0 244px;
+    width: 37.59398496240602%;  /* 300px / 798px * 100 = 37.59398496240602% */
+    margin: 0 30.57644110275689%;   /* 244px / 798px * 100 = 30.57644110275689% */
     margin-bottom: 20px;
 }
 
 div#divTextarea {
-    margin: 0 149px;
+    width: 62.65664160401003%;  /* 500px / 798px * 100 = 62,65664160401003% */
+    margin: 0 18.67167919799499%;   /* 149px / 798px * 100 = 18.67167919799499% */
 }
 
 div.divCampoIzq {
-    margin: 20px 140px 20px 29px;
+    width: 37.59398496240602%;  /* 300px / 798px * 100 = width: 37.59398496240602% */
+    margin: 20px 17.54385964912281% 20px 3.634085213032581%;
 }
 
 div.divCampoDer {
-    margin: 20px 29px 20px 0;
+    width: 37.59398496240602%;  /* 300px / 798px * 100 = width: 37.59398496240602% */
+    margin: 20px 3.634085213032581% 20px 0;
 }
 
 div#divBotonIzq {
+    width: 18.79699248120301%   /* 150px / 798px * 100 = 18,79699248120301% */;
     margin: 20px 0;
-    margin-left: 149px;
-    margin-right: 200px;
+    margin-left: 18.67167919799499%;    /* 149px / 798px * 100 = 18,67167919799499% */;
+    margin-right: 25.06265664160401%;    /* 200px / 798px * 100 = 25,06265664160401% */
 }
 
-div#divBotonIzq button {
+div#divBotonIzq button {     /* Al ser border-box indico el ancho total que va a tener el botón, en vez de calcularlo */
     background-color: crimson;
     color: white;
-    width: 150px;   /* Al ser border-box indico el ancho total que va a tener el botón, en vez de calcularlo */
+    width: 100%;   /* 150px / 150px * 100 = 100% */
     border: 1px solid black;
-    padding: 5px;
+    padding: 3.333333333333333%; /* 5px / 150px * 100 = 3.333333333333333% */
     font-weight: bold;
 }
 
 div#divBotonDer {
+    width: 18.79699248120301%   /* 150px / 798px * 100 = 18,79699248120301% */;
     margin: 20px 0;
-    margin-right: 149px;
+    margin-right: 18.67167919799499%;    /* 149px / 798px * 100 = 18,67167919799499% */;
 }
 
-div#divBotonDer button {
+div#divBotonDer button {    /* Al ser border-box indico el ancho total que va a tener el botón, en vez de calcularlo */
     background-color: darkturquoise;
     color: white;
-    width: 150px;
+    width: 100%;   /* 150px / 150px * 100 = 100% */
     border: 1px solid black;
-    padding: 5px;
+    padding: 3.333333333333333%; /* 5px / 150px * 100 = 3.333333333333333% */
     font-weight: bold;
 }
 
 textarea {
-    width: 488px;
-    padding: 5px;
+    width: 97.6%;
+    padding: 1%;
     border: 1px solid lightgray;
     resize: none;
 }
 
 footer div#divFooter {
-    width: 250px;
-    margin: 0 515px;
+    width: 19.53125%;   /* 250px / 1280px * 100 = 19,53125% */
+    margin: 0 40.234375%;   /* 545px / 1280px * 100 = 40,234375% */
     font-size: 0;
 }
 
@@ -162,10 +168,11 @@ footer {
 }
 
 footer div#divFooter img {
-    padding: 5px;
+    width: 16%;
+    padding: 2%;
 }
 
-/* ----- Media Query Tablet ----- */
+/* ----- Media Query Tablet ----- 
 @media (max-width:768px) {
     body, header, footer {
         width: 768px;
@@ -220,6 +227,10 @@ footer div#divFooter img {
         padding: 5px;
         border: 1px solid lightgray;
         background-color: white;
+    }
+    
+    form div {
+        display: inline-block;
     }
     
     div#divSelect {
@@ -284,3 +295,4 @@ footer div#divFooter img {
         padding: 5px;
     }
 }
+*/

@@ -31,6 +31,7 @@ nav div.navElemento {
     padding: 5px;
     color: white;
     font-weight: bold;
+    margin: 10px 0;
 }
 
 nav div.navElemento:hover {
@@ -127,6 +128,7 @@ div#divBotonIzq button {
     border: 1px solid black;
     padding: 5px;
     font-weight: bold;
+    min-height: 30px;
 }
 
 div#divBotonDer {
@@ -141,6 +143,7 @@ div#divBotonDer button {
     border: 1px solid black;
     padding: 5px;
     font-weight: bold;
+    min-height: 30px;
 }
 
 textarea {
@@ -167,11 +170,12 @@ footer div#divFooter img {
 
 /* ----- Media Query Tablet ----- */
 @media (max-width:768px) {
-    body, header, footer, nav {
+    body, header, footer {
         width: 768px;
     }
     
     nav {
+        width: 766px;
         float: none;
         min-height: 300px;
     }
@@ -184,6 +188,7 @@ footer div#divFooter img {
 
     nav div.navElemento {
         font-size: 0.8em;
+        margin: 0;
         text-align: center;
     }
 
@@ -269,7 +274,7 @@ footer div#divFooter img {
         font-size: 0.8em;
     }
 
-    body, header, footer, nav {
+    body, header, footer {
         width: 420px;
     }
 
@@ -280,9 +285,8 @@ footer div#divFooter img {
     }
 
     nav {
+        width: 418px;
         float: none;
-        display: block;
-        min-height: 35px;
     }
 
     nav div.navElementoTitulo, 
@@ -291,8 +295,12 @@ footer div#divFooter img {
         width: 410px;
     }
 
+    nav div.navElemento {
+        margin: 0;
+    }
+
     div#divTitulo {
-        width: 420px;
+        width: 418px;
         margin-left: 0;
     }
 

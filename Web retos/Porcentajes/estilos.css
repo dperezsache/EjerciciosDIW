@@ -31,6 +31,7 @@ nav div.navElemento {
     padding: 1.677852348993289%;   /* 5px / 298px (ancho padre) * 100 = 1,677852348993289% */
     color: white;
     font-weight: bold;
+    margin: 10px 0;
 }
 
 nav div.navElemento:hover {
@@ -132,6 +133,7 @@ div#divBotonIzq button {     /* Al ser border-box indico el ancho total que va a
     border: 1px solid black;
     padding: 3.333333333333333%; /* 5px / 150px * 100 = 3.333333333333333% */
     font-weight: bold;
+    min-height: 30px;
 }
 
 div#divBotonDer {
@@ -147,6 +149,7 @@ div#divBotonDer button {    /* Al ser border-box indico el ancho total que va a 
     border: 1px solid black;
     padding: 3.333333333333333%; /* 5px / 150px * 100 = 3.333333333333333% */
     font-weight: bold;
+    min-height: 30px;
 }
 
 textarea {
@@ -174,28 +177,38 @@ footer div#divFooter img {
 
 /* ----- Media Query Tablet ----- */
 @media (max-width:768px) {
-    body, header, footer, nav {
+    body {
         width: 768px;
     }
     
+    header, footer {
+        width: 100%;
+    }
+
+    header img {
+        width: 52.08333333333333%;  /* 400px / 768px * 100 = 52,08333333333333% */
+    }
+    
     nav {
+        width: 99.73958333333333%; /* 766px / 768px * 100 = 99,73958333333333% */
         float: none;
-        min-height: 300px;
     }
 
     nav div.navElementoTitulo, 
     nav div.navElemento {
         text-decoration: none;
-        width: 758px;
+        width: 98.69791666666667%;  /* 758px / 768px * 100 = 98,69791666666667% */
+        padding: 0.6510416666666667%; /* 5px / 768px * 100 = 0,6510416666666667% */
     }
 
     nav div.navElemento {
         font-size: 0.8em;
+        margin: 0;
         text-align: center;
     }
 
     div#divTitulo {
-        width: 768px;
+        width: 100%;
         margin-left: 0;
     }
 
@@ -204,102 +217,110 @@ footer div#divFooter img {
     }
 
     form#formAlta {
-        width: 726px;
+        width: 94.53125%;   /* 726px / 768px * 100 = 94,53125% */
         border: 1px solid lightblue;
-        margin: 20px;
+        margin: 2.604166666666667%;  /* 20px / 768px * 100 = 2,604166666666667% */
         background-color:aliceblue;
     }
     
     input {
-        width: 288px;
+        width: 96%;
         min-height: 25px;
         border: 1px solid lightgray;
         padding: 0 5px;
     }
 
     div.divCampoIzq {
-        margin: 20px 86px 20px 20px;
+        width: 41.32231404958678%;  /* 300px / 726px * 100 = 41,32231404958678% */
+        margin: 20px 11.84573002754821% 20px 2.754820936639118%;
     }
 
     div.divCampoDer {
-        margin: 20px 20px 20px 0;
+        width: 41.32231404958678%;  /* 300px / 726px * 100 = 41,32231404958678% */
+        margin: 20px 2.754820936639118% 20px 0;
     }
     
     select {
-        width: 300px;
+        width: 100%;
         padding: 5px;
         border: 1px solid lightgray;
         background-color: white;
     }
 
     div#divSelect {
-        margin: 20px 213px;
+        width: 41.32231404958678%;  /* 300px / 726px * 100 = 41,32231404958678% */
+        margin: 20px 29.33884297520661%;    /* 213px / 725px * 100 = 29,33884297520661% */
     }
 
     textarea {
-        width: 488px;
+        width: 97.6%;   /* 488px / 500px * 100 = 97,6% */
         min-height: 50px;
     }
 
     div#divTextarea {
-        margin: 0 113px;
+        width: 68.87152341597796%; /* 500px / 726px * 100 = 68,87152341597796% */
+        margin: 0 15.56473829201102%; /* 113px / 726px * 100 = 15,56473829201102% */
     }
 
     div#divBotonIzq {
-        margin-left: 113px;
-        margin-right: 200px;
+        width: 20.66115702479339%;  /* 150px / 726px * 100 = 20,66115702479339% */
+        margin-left: 15.56473829201102%;   /* 113px / 726px * 100 = 15,56473829201102% */
+        margin-right: 27.54820936639118%;   /* 200px / 726px * 100 = 27,54820936639118% */
     }
 
     div#divBotonDer {
-        margin-right: 113px;
+        width: 20.66115702479339%;  /* 150px / 726px * 100 = 20,66115702479339% */
+        margin-right: 15.56473829201102%;   /* 113px / 726px * 100 = 15,56473829201102% */
     }
 
-    div#divBotonIzq button,
-    div#divBotonDer button {
-        width: 150px;
-    }
-    
     div#divBotonDer {
         margin: 20px 0;
-        margin-right: 99px;
+        margin-right: 13.63636363636364%;   /* 99px / 726px * 100 = 13,63636363636364% */
     }
     
     footer div#divFooter {
-        width: 250px;
-        margin: 0 259px;
+        width: 32.55208333333333%;  /* 250px / 768px * 100 = 34,43526170798898% */
+        margin: 0 33.72395833333333%;    /* 259px / 768px * 100 = 33,72395833333333% */
     }
 }
 
 /* ----- Media Query Smartphone ----- */
 @media (max-width:420px) {
     body {
+        width: 420px;
         font-size: 0.8em;
     }
 
-    body, header, footer, nav {
-        width: 420px;
+    header, footer {
+        width: 100%;
     }
 
     header img {
-        width: 210px;
-        margin-left: 100px;
-        margin-right: 110px;
+        width: 50%;
+        margin-left: 23.80952380952381%;    /* 100px / 420px * 100 = 23,80952380952381% */
+        margin-right: 26.19047619047619%;    /* 110px / 420px * 100 = 26,19047619047619% */
     }
 
     nav {
+        width: 99.52380952380952%;  /* 418px / 420px * 100 = 99,52380952380952%  */
         float: none;
         display: block;
-        min-height: 35px;
+        min-height: 300px;
     }
 
     nav div.navElementoTitulo, 
     nav div.navElemento {
         text-decoration: none;
-        width: 410px;
+        width: 98.08612440191388%;  /* 410px / 418px * 100 = 98,08612440191388% */
+        padding: 1.196172248803828%; /* 5px / 418px * 100 = 1,196172248803828% */
+    }
+
+    nav div.navElemento {
+        margin: 0;
     }
 
     div#divTitulo {
-        width: 420px;
+        width: 99.52380952380952%;  /* 418px / 420px * 100 = 99,52380952380952%  */
         margin-left: 0;
     }
 
@@ -308,52 +329,61 @@ footer div#divFooter img {
     }
 
     form#formAlta {
-        width: 388px;
-        margin: 15px;
+        width: 92.38095238095238%; /* 388px / 420px * 100 = 92,38095238095238% */
+        margin: 3.571428571428571%; /* 15px / 420px * 100 = 3,571428571428571% */
     }
 
     form div {
         float: none;
     }
 
-    input {
-        width: 338px;
+    input, textarea {
+        width: 96.57142857142857%;  /* 338px / 350px * 100 = 96,57142857142857% */
+        padding: 0 1.428571428571429%;  /* 5px / 350px * 100 = 1,428571428571429% */
     }
 
     textarea {
-        width: 338px;
+        padding: 1.428571428571429%;  /* 5px / 350px * 100 = 1,428571428571429% */
         min-height: 75px;
     }
 
-    select {
-        width: 350px;
+    div#divSelect {
+        width: 90.20618556701031%;  /* 350px / 388px * 100 = 90,20618556701031% */
+        margin: 20px 4.896907216494845%;    /* 19px / 388px * 100 = 4,896907216494845% */
     }
 
     div.divCampoIzq,
     div.divCampoDer,
     div#divSelect,
     div#divTextarea {
-        margin: 20px 19px;
+        width: 90.20618556701031%;  /* 350px / 388px * 100 = 90,20618556701031% */
+        margin: 20px 4.896907216494845%;    /* 19px / 388px * 100 = 4,896907216494845% */
     }
 
     div#divBotonIzq {
         float: left;
-        width: 160px;
+        width: 41.23711340206186%;  /* 160px / 388px * 100 = 41,23711340206186% */
         margin-top: 0;
-        margin-left: 29px;
-        margin-right: 10px;
+        margin-left: 7.474926804123711%;    /* 29px / 388px * 100 = 7,474226804123711% */
+        margin-right: 2.577319587628866%;   /* 10px / 388px * 100 = 2,577319587628866% */
         margin-bottom: 20px;
+    }
+
+    div#divBotonIzq button,
+    div#divBotonDer button {
+        width: 93.75%;
     }
 
     div#divBotonDer {
         float: left;
-        width: 160px;
+        width: 41.23711340206186%;  /* 160px / 388px * 100 = 41,23711340206186% */
         margin: 0;
-        margin-right: 29px;
+        margin-right: 7.474226804123711%;    /* 29px / 388px * 100 = 7,474226804123711% */
         margin-bottom: 20px;
     }
 
     footer div#divFooter {
-        margin: 0 85px;
+        width: 59.52380952380952%; /* 250px / 420px * 100 = 59,52380952380952% */
+        margin: 0 20.23809523809524%;   /* 85px / 420px * 100 = 20,23809523809524% */
     }
 }

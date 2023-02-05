@@ -167,91 +167,89 @@ footer div#divFooter img {
 
 /* ----- Media Query Tablet ----- */
 @media (max-width:768px) {
-    body, header, footer {
+    body, header, footer, nav {
         width: 768px;
     }
     
     nav {
-        width: 183px;
-        min-height: 591px;
+        float: none;
+        min-height: 300px;
+    }
+
+    nav div.navElementoTitulo, 
+    nav div.navElemento {
+        text-decoration: none;
+        width: 758px;
     }
 
     nav div.navElemento {
-        width: 175px;
-        font-size: 0.75em;
-    }
-
-    nav div.navElementoTitulo {
-        text-align: left;
+        font-size: 0.8em;
+        text-align: center;
     }
 
     div#divTitulo {
-        width: 580px;
-        margin-left: 185px;
+        width: 768px;
+        margin-left: 0;
     }
-    
+
     div#divContenido {
-        margin-left: 185px;
+        margin-left: 0;
     }
 
     form#formAlta {
-        width: 538px;
+        width: 726px;
         border: 1px solid lightblue;
-        margin: 20px 22.5px;
+        margin: 20px;
         background-color:aliceblue;
-        text-align: center;
-    }
-    
-    label {
-        width: 150px;
-        text-align: left;
-        display: block;
     }
     
     input {
-        width: 188px;
+        width: 288px;
         min-height: 25px;
         border: 1px solid lightgray;
         padding: 0 5px;
     }
-    
-    select {
-        width: 198px;
-        padding: 5px;
-        border: 1px solid lightgray;
-        background-color: white;
-    }
-    
-    div#divSelect {
-        margin: 0 169px;
-        margin-bottom: 20px;
-    }
-    
-    div#divTextarea {
-        margin: 0 99px;
-    }
-    
+
     div.divCampoIzq {
-        margin: 20px 98px 20px 20px;
+        margin: 20px 86px 20px 20px;
     }
-    
+
     div.divCampoDer {
         margin: 20px 20px 20px 0;
     }
     
-    div#divBotonIzq {
-        margin: 20px 0;
-        margin-left: 99px;
-        margin-right: 100px;
-    }
-    
-    div#divBotonIzq button {
-        background-color: crimson;
-        color: white;
-        width: 120px;
-        border: 1px solid black;
+    select {
+        width: 300px;
         padding: 5px;
-        font-weight: bold;
+        border: 1px solid lightgray;
+        background-color: white;
+    }
+
+    div#divSelect {
+        margin: 20px 213px;
+    }
+
+    textarea {
+        width: 488px;
+        min-height: 50px;
+    }
+
+    div#divTextarea {
+        margin: 0 113px;
+    }
+
+    div#divBotonIzq {
+        margin-left: 113px;
+        margin-right: 200px;
+    }
+
+    div#divBotonDer {
+        margin-right: 113px;
+    }
+
+    div#divBotonIzq button,
+    div#divBotonDer button {
+        width: 150px;
     }
     
     div#divBotonDer {
@@ -259,28 +257,96 @@ footer div#divFooter img {
         margin-right: 99px;
     }
     
-    div#divBotonDer button {
-        background-color: darkturquoise;
-        width: 120px;
-        border: 1px solid black;
-        padding: 5px;
-        font-weight: bold;
-    }
-    
-    textarea {
-        width: 328px;
-        padding: 5px;
-        border: 1px solid lightgray;
-        resize: none;
-    }
-    
     footer div#divFooter {
         width: 250px;
         margin: 0 259px;
-        font-size: 0;
     }
-    
-    footer div#divFooter img {
-        padding: 5px;
+}
+
+/* ----- Media Query Smartphone ----- */
+@media (max-width:420px) {
+    body {
+        font-size: 0.8em;
+    }
+
+    body, header, footer, nav {
+        width: 420px;
+    }
+
+    header img {
+        width: 210px;
+        margin-left: 100px;
+        margin-right: 110px;
+    }
+
+    nav {
+        float: none;
+        display: block;
+        min-height: 35px;
+    }
+
+    nav div.navElementoTitulo, 
+    nav div.navElemento {
+        text-decoration: none;
+        width: 410px;
+    }
+
+    div#divTitulo {
+        width: 420px;
+        margin-left: 0;
+    }
+
+    div#divContenido {
+        margin-left: 0;
+    }
+
+    form#formAlta {
+        width: 388px;
+        margin: 15px;
+    }
+
+    form div {
+        float: none;
+    }
+
+    input {
+        width: 338px;
+    }
+
+    textarea {
+        width: 338px;
+        min-height: 75px;
+    }
+
+    select {
+        width: 350px;
+    }
+
+    div.divCampoIzq,
+    div.divCampoDer,
+    div#divSelect,
+    div#divTextarea {
+        margin: 20px 19px;
+    }
+
+    div#divBotonIzq {
+        float: left;
+        width: 160px;
+        margin-top: 0;
+        margin-left: 29px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+
+    div#divBotonDer {
+        float: left;
+        width: 160px;
+        margin: 0;
+        margin-right: 29px;
+        margin-bottom: 20px;
+    }
+
+    footer div#divFooter {
+        margin: 0 85px;
     }
 }

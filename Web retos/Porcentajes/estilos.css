@@ -191,6 +191,7 @@ footer div#divFooter img {
     
     nav {
         width: 99.73958333333333%; /* 766px / 768px * 100 = 99,73958333333333% */
+        min-height: 300px;
         float: none;
     }
 

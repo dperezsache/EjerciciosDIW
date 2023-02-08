@@ -82,7 +82,7 @@ label {
 
 input {
     width: 96%; /* 288x / 300px * 100 = 96% */
-    height: 25px;
+    min-height: 25px;
     border: 1px solid lightgray;
     padding: 0 1.666666666666667%;  /* 5px / 300px * 100 = 1.666666666666667% */
 }
